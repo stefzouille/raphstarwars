@@ -14,10 +14,7 @@ const  App = () => {
   const handleButtonMore = () => {
     setUrl(nextUrl)
   }
-const handleButtonClick = () => {
-  console.log(url)
-  console.log(nextUrl)
-}
+
 
     return (
       <div className="App">
@@ -25,7 +22,7 @@ const handleButtonClick = () => {
         <div className="container">
           <StarWarsApp setNextUrl={setNextUrl} url={url}/>
           <button disabled={nextUrl === null} onClick={handleButtonMore} className="btn btn-info my-5 me-2">{nextUrl !== null? "Voir plus" : "Fin de la liste"}</button>
-          <button onClick={handleButtonClick} className="btn btn-info my-5">Voir les données (console)</button>
+         
         </div>
       </div>
     );

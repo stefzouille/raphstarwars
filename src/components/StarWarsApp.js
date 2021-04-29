@@ -12,9 +12,7 @@ useEffect(() => {
       setIsLoading(true)
       let data = await axios(url)
       setIsLoading(false)
-      console.log(data)
-      console.log(data.data.results)
-      console.log(data.next)
+      
   //agrandir la liste
   for (let elem of data.data.results) {
     planetsList.push(elem)
